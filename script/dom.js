@@ -42,42 +42,42 @@ export function generateCard(card, cardElement) {
       cardHeaderElt.style.setProperty("--bg-color", "var(--orange300)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("images/icon-work.svg")',
+        'url("../images/icon-work.svg")',
       )
       break
     case "Play":
       cardHeaderElt.style.setProperty("--bg-color", "var(--blue300)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("../../images/icon-play.svg")',
+        'url("../images/icon-play.svg")',
       )
       break
     case "Study":
       cardHeaderElt.style.setProperty("--bg-color", "var(--pink400)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("../../images/icon-study.svg")',
+        'url("../images/icon-study.svg")',
       )
       break
     case "Exercise":
       cardHeaderElt.style.setProperty("--bg-color", "var(--green400)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("../../images/icon-exercise.svg")',
+        'url("../images/icon-exercise.svg")',
       )
       break
     case "Social":
       cardHeaderElt.style.setProperty("--bg-color", "var(--purple700)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("../../images/icon-social.svg")',
+        'url("../images/icon-social.svg")',
       )
       break
     case "Self Care":
       cardHeaderElt.style.setProperty("--bg-color", "var(--yellow300)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("../../images/icon-self-care.svg")',
+        'url("../images/icon-self-care.svg")',
       )
       break
   }
