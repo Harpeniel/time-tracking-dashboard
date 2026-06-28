@@ -42,7 +42,7 @@ export function generateCard(card, cardElement) {
       cardHeaderElt.style.setProperty("--bg-color", "var(--orange300)")
       cardHeaderElt.style.setProperty(
         "--bg-image",
-        'url("./images/icon-work.svg")',
+        'url("images/icon-work.svg")',
       )
       break
     case "Play":
