@@ -1,0 +1,13 @@
+@use '../abstracts/' as a;
+
+body {
+    color: white;
+    font-size: 100%;
+    font-family: 'Rubik';
+    font-weight: 300;
+    background: var(--navy950);
+    @include a.breakpoint ('large') {
+        display: grid;
+        place-content: center;
+    }
+}

@@ -1,0 +1,238 @@
+:root {
+  --purple600: hsl(246, 80%, 60%);
+  --orange300: hsl(15, 100%, 70%);
+  --blue300: hsl(195, 74%, 62%);
+  --pink400: hsl(348, 100%, 68%);
+  --green400: hsl(145, 58%, 55%);
+  --purple700: hsl(264, 64%, 52%);
+  --yellow300: hsl(43, 84%, 65%);
+  --navy950: hsl(226, 43%, 10%);
+  --navy900: hsl(235, 46%, 20%);
+  --purple500: hsl(235, 45%, 61%);
+  --navy200: hsl(236, 100%, 87%);
+}
+
+body {
+  color: white;
+  font-size: 100%;
+  font-family: "Rubik";
+  font-weight: 300;
+  background: var(--navy950);
+}
+@media (min-width: 56.25em) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+  font: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+a, button, input, select, textarea {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+img, picture, video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 56.24875em) {
+  .header {
+    margin-bottom: 4.375rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    grid-row-end: span 2;
+    max-width: 15.625rem;
+  }
+}
+
+.profil {
+  padding: 1rem;
+  background: var(--purple600);
+  border-radius: 0.9375rem;
+}
+@media (max-width: 56.24875em) {
+  .profil {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .profil {
+    flex: 1;
+  }
+}
+.profil__img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: solid 0.3125rem #fff;
+  border-radius: 50%;
+}
+@media (min-width: 56.25em) {
+  .profil__img {
+    margin-bottom: 2.5rem;
+  }
+}
+.profil__description__banner {
+  color: var(--navy200);
+}
+.profil__description__name {
+  font-size: 2.5rem;
+}
+@media (min-width: 56.25em) {
+  .profil__description__name {
+    margin-bottom: 3.125rem;
+  }
+}
+
+.filters-btn {
+  background: var(--navy900);
+  padding: 2.5rem 1.25rem;
+  border-radius: 0.9375rem;
+}
+@media (max-width: 56.24875em) {
+  .filters-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.filters-btn button {
+  display: block;
+  color: var(--navy200);
+  font-size: 1.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.filters-btn button:hover {
+  color: white;
+}
+@media (min-width: 56.25em) {
+  .filters-btn button {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media (max-width: 56.24875em) {
+  .card {
+    margin-bottom: 1.375rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .card {
+    position: relative;
+  }
+}
+
+.card__header {
+  --bg-color: var(--orange300);
+  --bg-image: url("../../images/icon-work.svg");
+  height: 4.0625rem;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: right 1.25rem top -0.625rem;
+  border-radius: 0.9375rem;
+}
+
+.card__main {
+  padding: 2.5rem 1.25rem;
+  background: hsl(235, 46%, 20%);
+  border-radius: 0.9375rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card__main:hover {
+  background: hsl(235, 46%, 30%);
+}
+@media (max-width: 56.24875em) {
+  .card__main {
+    position: relative;
+    top: -1.75rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .card__main {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.card__main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.card__main__header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.card__main__header__option {
+  width: 1.3125rem;
+  height: 0.3125rem;
+}
+.card__main__content {
+  align-items: center;
+}
+@media (max-width: 56.24875em) {
+  .card__main__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.card__main__content__current-time {
+  font-size: 2.8125rem;
+}
+@media (min-width: 56.25em) {
+  .card__main__content__current-time {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.25rem;
+  }
+}
+
+.active {
+  color: white !important;
+}/*# sourceMappingURL=style.css.map */

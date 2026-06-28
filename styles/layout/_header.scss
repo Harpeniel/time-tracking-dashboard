@@ -1,0 +1,71 @@
+@use '../abstracts/' as a;
+
+.header {
+    @include a.breakpoint-down ('medium') {
+        margin-bottom: a.rem(70px);
+    }
+    @include a.breakpoint('large') {
+        display: flex;
+        flex-direction: column;
+        grid-row-end: span 2;
+        max-width: a.rem(250px);
+    }
+}
+.profil {
+    @include a.breakpoint-down ('medium') {
+        display: flex;
+        align-items: center;
+        column-gap: a.rem(20px);
+    }
+    padding: 1rem;
+    background: var(--purple600);
+    border-radius: a.rem(15px);
+    @include a.breakpoint ('large') {
+        flex: 1;
+    }
+    &__img {
+        width: a.rem(100px);
+        height: a.rem(100px);
+        border: solid a.rem(5px) #fff;
+        border-radius: 50%;
+        @include a.breakpoint ('large') {
+            margin-bottom: a.rem(40px);
+        }
+    }
+
+    &__description {
+        &__banner {
+            color: var(--navy200);
+        }
+
+        &__name {
+            font-size: a.rem(40px);
+            @include a.breakpoint ('large') {
+                margin-bottom: a.rem(50px);
+            }
+        }
+    }
+}
+
+.filters-btn {
+    @include a.breakpoint-down ('medium') {
+        display: flex;
+        justify-content: space-between;
+    }
+    background: var(--navy900);
+    padding: a.rem(40px) a.rem(20px);
+    border-radius: a.rem(15px);
+    button {
+        display: block;
+        color: var(--navy200);
+        font-size: a.rem(20px);
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            color: white;
+        }
+        @include a.breakpoint ('large') {
+            margin-bottom: a.rem(15px);
+        }
+    }
+}

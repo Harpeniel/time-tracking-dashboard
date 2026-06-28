@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+  <script type="module" src="./script/app.js" defer></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="header">
+      <div class="profil">
+        <img src="./images/image-jeremy.png" alt="profil image" class="profil__img" />
+        <div class="profil__description">
+          <p class="profil__description__banner">Report for</p>
+          <h3 class="profil__description__name">Jeremy Robson</h3>
+        </div>
+      </div>
+      <div class="filters-btn">
+        <button>Daily</button>
+        <button class="active">Weekly</button>
+        <button>Monthly</button>
+      </div>
+    </section>
+  </div>
+
+
+</body>
+
+<!-- Card template -->
+<template id="card-template">
+  <section class="card">
+    <div class="card__header">
+    </div>
+    <div class="card__main">
+      <div class="card__main__header">
+        <p class="card__main__header__title"></p>
+        <img class="card__main__header__option" src="./images/icon-ellipsis.svg" alt="option icon" />
+      </div>
+      <div class="card__main__content">
+        <p class="card__main__content__current-time">10hrs</p>
+        <p class="card__main__content__previous-time">Last Week - 7hrs</p>
+      </div>
+    </div>
+  </section>
+
+</template>
+
+</html>

@@ -1,0 +1,83 @@
+@use '../abstracts/' as a;
+
+.card {
+    @include a.breakpoint-down ('medium') {
+        margin-bottom: a.rem(22px);
+
+    }
+
+    @include a.breakpoint ('large') {
+        position: relative;
+    }
+}
+
+.card__header {
+    --bg-color: var(--orange300);
+    --bg-image: url('../../images/icon-work.svg');
+    height: a.rem(65px);
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: right a.rem(20px) top a.rem(-10px);
+    border-radius: a.rem(15px);
+}
+
+.card__main {
+    $card-color: hsl(235, 46%, 20%);;
+    padding: a.rem(40px) a.rem(20px);
+    background: $card-color;
+    border-radius: a.rem(15px);
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        background: lighten($color: $card-color, $amount: 10)
+    }
+
+    @include a.breakpoint-down ('medium') {
+        position: relative;
+        top: a.rem(-28px);
+    }
+
+    @include a.breakpoint ('large') {
+        position: absolute;
+        top: 17%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: a.rem(20px);
+
+        &__title {
+            font-size: a.rem(20px);
+            font-weight: 700;
+        }
+
+        &__option {
+            width: a.rem(21px);
+            height: a.rem(5px);
+        }
+    }
+
+    &__content {
+        @include a.breakpoint-down ('medium') {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        align-items: center;
+
+        &__current-time {
+            font-size: a.rem(45px);
+
+            @include a.breakpoint ('large') {
+                margin-bottom: a.rem(20px);
+            }
+        }
+    }
+
+}
