@@ -3,7 +3,7 @@ import { cloneTemplate, fetchCard, generateCard, handleClick } from "./dom.js";
 const btns = Array.from(document.querySelectorAll('button'))
 let cards = []
 try {
-  cards = await fetchCard('../data.json')
+  cards = await fetchCard('https://harpeniel.github.io/time-tracking-dashboard/data.json')
 } catch (e) {
   console.log(e.message)
 }
